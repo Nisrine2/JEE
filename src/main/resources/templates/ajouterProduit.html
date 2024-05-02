@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="/webjars/bootstrap/5.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+
+  <form th:action="@{/ajouterProduit}" th:object="${produit}" method="post">
+    <div class="mb-lg-2">
+      <label for="nom" class="form-label">Nom produit</label>
+      <input type="text" class="form-control" id="nom" name="nom">
+    </div>
+    <div class="mb-lg-2">
+      <label for="description" class="form-label">description</label>
+      <input type="text" class="form-control" id="description" name="description">
+    </div>
+    <div class="mb-lg-2">
+      <label for="exampleInputPassword3" class="form-label">image</label>
+      <input type="text" class="form-control" id="exampleInputPassword3" name="image">
+    </div>
+    <div class="mb-lg-2">
+      <label for="exampleInputPassword4" class="form-label">categorie</label>
+      <input type="text" class="form-control" id="exampleInputPassword4" name="category">
+    </div>
+    <div class="mb-lg-2">
+      <label for="exampleInputPassword5" class="form-label">quantite</label>
+      <input type="text" class="form-control" id="exampleInputPassword5" name="quantite">
+    </div>
+    <div class="mb-lg-2">
+      <label for="exampleInputPassword6" class="form-label">prix</label>
+      <input type="text" class="form-control" id="exampleInputPassword6" name="prix">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
